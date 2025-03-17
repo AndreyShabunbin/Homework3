@@ -91,5 +91,31 @@ public class Main {
                 System.out.println("Если спортсмен будет терять 250 грамм в день, похудение займет " + dayMin + " дней.");
                 System.out.println("Если спортсмен будет терять 500 грамм в день, похудение займет " + dayMax + " дней.");
                 System.out.println("В среднем похудение займет " + averageDays + " дней.");
+                //Задача 8
+                double mashaSalary = 67760;
+                double denisSalary = 83690;
+                double kristinaSalary = 76230;
+
+                double increasePercentage = 0.10;
+
+                double mashaNewSalary = mashaSalary + (mashaSalary * increasePercentage);
+                double denisNewSalary = denisSalary + (denisSalary * increasePercentage);
+                double kristinaNewSalary = kristinaSalary + (kristinaSalary * increasePercentage);
+
+                double mashaAnnualIncomeBefore = mashaSalary * 12;
+                double denisAnnualIncomeBefore = denisSalary * 12;
+                double kristinaAnnualIncomeBefore = kristinaSalary * 12;
+
+                double mashaAnnualIncomeAfter = mashaNewSalary * 12;
+                double denisAnnualIncomeAfter = denisNewSalary * 12;
+                double kristinaAnnualIncomeAfter = kristinaNewSalary * 12;
+
+                double mashaIncomeDifference = mashaAnnualIncomeAfter - mashaAnnualIncomeBefore;
+                double denisIncomeDifference = denisAnnualIncomeAfter - denisAnnualIncomeBefore;
+                double kristinaIncomeDifference = kristinaAnnualIncomeAfter - kristinaAnnualIncomeBefore;
+
+                System.out.printf("Маша теперь получает " + mashaNewSalary + "рублей. " + "Годовой доход вырос на " + mashaIncomeDifference  + "рублей.");
+                System.out.printf("Денис теперь получае " + denisNewSalary + "рублей." + " Годовой доход вырос на " + denisIncomeDifference +  "рублей.");
+                System.out.printf("Кристина теперь получает " + kristinaNewSalary +  "рублей." +  "Годовой доход вырос на " + kristinaIncomeDifference + "рублей.");
     }
 }
